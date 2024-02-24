@@ -54,7 +54,7 @@ export default {
     
 
     // Requisição para obter os dados das localidades
-    axios.get('http://10.0.0.101:5000/api/localidades')
+    axios.get('http://evertontenorio.tech:3001/api/localidades')
       .then(response => {
         this.localidades = response.data;
         // Adiciona marcadores ao mapa para cada localidade
