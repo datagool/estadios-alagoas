@@ -54,7 +54,7 @@ export default {
     
 
     // Requisição para obter os dados das localidades
-    axios.get('https://jogos.evertontenorio.tech/api/localidades')
+    axios.get(process.env.VUE_API_LOCALIDADES)
       .then(response => {
         this.localidades = response.data;
         // Adiciona marcadores ao mapa para cada localidade
