@@ -19,7 +19,7 @@
             <p>Cidade: {{ selectedLocalidade.municipio }}</p>
             <p>Tipo de administração: {{ selectedLocalidade.administra }}</p>
             <div id="g-maps">
-              <a :href="'https://www.google.com/maps?q=' + selectedLocalidade.latitude + ',' + selectedLocalidade.longitude"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991231.png" width="15%"/></a>
+              <a :href="'https://www.google.com/maps?q=' + selectedLocalidade.latitude + ',' + selectedLocalidade.longitude"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991231.png" /></a>
             </div>
            </div>     
          </div>
@@ -97,6 +97,10 @@ export default {
   position: relative; 
 }
 
+#g-maps img {
+  width: 35px;
+}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
 }
@@ -155,7 +159,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   #map{
-    height: 328px;
+    height: 326px;
   }
 }
 </style>
