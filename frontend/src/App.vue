@@ -85,7 +85,7 @@ export default {
   margin-top: 30px;
 }
 #map {
-  height: 330px;
+  height: 410px;
   width: 99%; 
   border: 2px solid red;
   border-radius: 5px;
@@ -154,6 +154,8 @@ export default {
 
 
 @media screen and (max-width: 767px) {
-
+  #map{
+    height: 328px;
+  }
 }
 </style>
